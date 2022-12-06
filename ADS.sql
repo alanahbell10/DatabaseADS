@@ -34,3 +34,10 @@ create Table if not exists Course (
     Section int,
     Primary key (Course_Id)
 );
+
+create Table if not exists Monitors (
+	Emp_ID int,
+    TUID int,
+    Seat_no int,
+    Primary key (Emp_ID, TUID)
+);
